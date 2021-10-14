@@ -1,0 +1,13 @@
+{
+	"prefix": "/",
+	"ownerNumber": [
+		"62895331406727@s.whatsapp.net"
+	],
+	"msg": {
+		"owner": "Perintah ini hanya dapat digunakan oleh _Owner Bot_",
+		"group": "Perintah ini hanya dapat digunakan di dalam grup!",
+		"admin": "Perintah ini hanya untuk *Admin* grup!",
+		"botAdmin": "Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!",
+		"privat": "Perintah ini hanya dapat digunakan di Privat chat!"
+	}
+}
