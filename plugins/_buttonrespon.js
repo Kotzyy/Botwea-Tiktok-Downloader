@@ -19,9 +19,9 @@ Untuk Penggunaan Silahkan Ketik /menu :
 Contoh: */menu*
 Di Nomor Bot Atau Di Grub Yang Terdapat Nomor Bot, Maka Bot Akan Merespon!
 Untuk Penggunaan Kedua Contohnya Jika Terdapat < Dan > Maka Kurung Tadi Jangan Di Anggap
-Contoh: */play sad songs*
+Contoh: */tiktok https://vt.tiktok.com/ZSerm6oTB/*
 Untuk Info Lebih Lanjut Ketik */menu <nama command>*
-Contoh: Contoh */menu sticker*`)
+Contoh: Contoh */menu tiktok*`)
     break
     case 'nowm':
       m.reply('Tunggu sedang di proses')
