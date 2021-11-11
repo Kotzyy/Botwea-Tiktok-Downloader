@@ -33,12 +33,12 @@ cmd.on("chat-update", async (chat) => {
     if (/^https?:\/\/.*vt/i.test(text)) {
     await cmd.chatRead(content.chat)
     const fetch = require('node-fetch')
-	  try { 
-       	var tiktok = await api.tiktok(text)
-      	cmd.send3ButtonImg(content.chat,  await (await fetch(tiktok.thumb)).buffer(), `${tiktok.caption}`, 'By Tiktok Downloader', 'Without Watermark', `>nowm ${tiktok.nowm}`, 'With Watermark', `>wm ${tiktok.wm}`, 'Only Audio', `>ttaudio ${tiktok.music}`, content)
+   	try { 
+    	var tiktok = await api.tiktok(args[0])
+    	cmd.send2ButtonVideo(content.chat,  await (await fetch(tiktok.nowm)).buffer(), `${tiktok.caption}`, 'By Tiktok Downloader', 'With Watermark', `>wm ${tiktok.wm}`, 'Only Audio', `>ttaudio ${tiktok.music}`, content)
   	} catch(err) {
-  		  console.log(err)
-  	  	cmd.reply('Terjadi kesalahan dalam mengambil media! Mohon tunggu beberapa saat lagi')
+  		console.log(err)
+  		cmd.reply('Terjadi kesalahan dalam mengambil media! Mohon tunggu beberapa saat lagi')
   	}
  }
 break;
