@@ -32,6 +32,7 @@ cmd.on("chat-update", async (chat) => {
     case 'extendedTextMessage':
     if (/^https?:\/\/.*vt/i.test(text)) {
     await cmd.chatRead(content.chat)
+    content.reply('Link TikTok Terdeteksi...' + '\n\n' + 'Sedang Mengambil Metadata')
     const fetch = require('node-fetch')
    	try { 
     	var tiktok = await api.tiktok(text)
