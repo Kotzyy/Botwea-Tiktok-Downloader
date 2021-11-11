@@ -5,8 +5,8 @@ cmd.get("menu", async(m, args) => {
             for(let a in cmd.commands) {
                 text += `*${config.prefix}${a}*\n`
             }
-                text += `\nKamu dapat menjalankan */menu <nama command>* untuk menampilkan bantuan lanjutan\nContoh */menu sticker*`
-            cmd.sendButtonImg(m.chat, fs.readFileSync('./src/img/image.jpg'), text, 'By Kotz X Marz', 'Cara penggunaan', '>readme', m)
+                text += `\nKamu dapat menjalankan */menu <nama command>* untuk menampilkan bantuan lanjutan\nContoh */menu tiktok*`
+            cmd.sendButtonImg(m.chat, fs.readFileSync('./src/img/image.jpg'), text, 'By Tiktok Downloader', 'Cara penggunaan', '>readme', m)
         } else {
             try { 
             const commandName = args[0];
