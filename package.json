@@ -30,6 +30,7 @@
     "request": "^2.88.2",
     "syntax-error": "^1.4.0",
     "tiktok-scraper": "^1.4.36",
+    "twibbonizze": "^1.0.3",
     "util": "^0.12.4",
     "yt-search": "^2.10.2"
   }

@@ -1,7 +1,9 @@
 {
 	"prefix": "/",
+	"api": "https://api.kotzyy.xyz",
+	"apikey": "KotzKey", 
 	"ownerNumber": [
-		"62895331406727@s.whatsapp.net"
+		"6281325994066@s.whatsapp.net"
 	],
 	"msg": {
 		"owner": "Perintah ini hanya dapat digunakan oleh _Owner Bot_",

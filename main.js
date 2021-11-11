@@ -6,7 +6,7 @@ const fs = require("fs");
 const config = require('./config')
 const color = require('./lib/color')
 const functions = require('./lib/function') 
-const scrape = require('./lib/scrape/index')
+const api = require('./lib/api')
 
 WAConnection.prototype.get = function (message, callback){
   if (!this.commands) this.commands = {};
@@ -14,7 +14,7 @@ WAConnection.prototype.get = function (message, callback){
 }
 const conn = new WAConnection();
 global.cmd = conn
-global.scrape = scrape
+global.api = api
 global.config = config
 global.axios = axios
 global.functions = functions

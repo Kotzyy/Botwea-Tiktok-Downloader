@@ -1,8 +1,8 @@
 const buttonresponse = async(cmd, content) => { 
-  let { yta, ytv } = require('../lib/scrape/y2mate');
   let m = content
   let buttonId = m.msg.selectedButtonId
   const buttonCmd = buttonId.replace('>', '').trim().split(/ +/).shift().toLowerCase()
+  const fetch = require('node-fetch')
   console.log(buttonId)
   switch(buttonCmd) { 
     case 'readme':
@@ -31,15 +31,9 @@ Contoh: Contoh */menu sticker*`)
       m.reply('Tunggu sedang di proses')
       cmd.sendFile(m.chat, buttonId.slice(4), 'tiktok.mp4', 'success', m)
       break
-    case 'yta':
+    case 'ttaudio':
       m.reply('Tunggu sedang di proses')
-      var res = await yta(buttonId.slice(5))
-      cmd.sendFile(m.chat, res.dl_link, `${res.title}.mp3`, '', m, false, { asDocument: true})
-      break
-    case 'ytv':
-      m.reply('Tunggu sedang di proses')
-      var res = await ytv(buttonId.slice(5))
-      cmd.sendFile(m.chat, res.dl_link, `${res.title}.mp4`, '', m, false, { asDocument: true})
+      cmd.sendFile(m.chat, buttonId.slice(9), 'tiktok.mp3', '', m, false, { asDocument: true})
       break
     }
   }

@@ -6,7 +6,7 @@ cmd.get("menu", async(m, args) => {
                 text += `*${config.prefix}${a}*\n`
             }
                 text += `\nKamu dapat menjalankan */menu <nama command>* untuk menampilkan bantuan lanjutan\nContoh */menu sticker*`
-            cmd.sendButtonImg(m.chat, fs.readFileSync('./src/img/image.jpg'), text, '© Ichinose', 'Cara penggunaan', '>readme', m)
+            cmd.sendButtonImg(m.chat, fs.readFileSync('./src/img/image.jpg'), text, 'By Kotz X Marz', 'Cara penggunaan', '>readme', m)
         } else {
             try { 
             const commandName = args[0];
