@@ -6,7 +6,7 @@ cmd.get("tiktok", async(m, args) => {
 	cmd.send3ButtonImg(m.chat,  await (await fetch(tiktok.thumb)).buffer(), `${tiktok.caption}`, 'By Tiktok Downloader', 'Without Watermark', `>nowm ${tiktok.nowm}`, 'With Watermark', `>wm ${tiktok.wm}`, 'Only Audio', `>ttaudio ${tiktok.music}`, m)
   	} catch(err) {
   		console.log(err)
-  		m.reply('Terjadi kesalahan dalam mengambil media! / Invalid Url...')
+  		m.reply('Terjadi kesalahan dalam mengambil media! Mohon tunggu beberapa saat lagi')
   	}
 })
 
