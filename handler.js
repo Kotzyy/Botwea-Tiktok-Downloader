@@ -34,8 +34,8 @@ cmd.on("chat-update", async (chat) => {
     await cmd.chatRead(content.chat)
     const fetch = require('node-fetch')
    	try { 
-    	var tiktok = await api.tiktok(args[0])
-    	cmd.send2ButtonVideo(content.chat,  await (await fetch(tiktok.nowm)).buffer(), `${tiktok.caption}`, 'By Tiktok Downloader', 'With Watermark', `>wm ${tiktok.wm}`, 'Only Audio', `>ttaudio ${tiktok.music}`, content)
+    	var tiktok = await api.tiktok(text)
+    	cmd.send2ButtonVideo(content.chat,  await (await fetch(tiktok.nowm)).buffer(), `${tiktok.caption}`, 'By Tiktok Downloader', 'With Watermark', `>wm ${tiktok.wm}`, 'Only Audio', `>ttaudio ${tiktok.music}`)
   	} catch(err) {
   		console.log(err)
   		cmd.reply('Terjadi kesalahan dalam mengambil media! Mohon tunggu beberapa saat lagi')
