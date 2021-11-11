@@ -24,16 +24,13 @@ Untuk Info Lebih Lanjut Ketik */menu <nama command>*
 Contoh: Contoh */menu tiktok*`)
     break
     case 'nowm':
-      m.reply('Tunggu sedang di proses')
-      cmd.sendFile(m.chat, buttonId.slice(6), 'tiktok.mp4', 'success', m)
+      cmd.sendFile(m.chat, buttonId.slice(6), 'tiktok.mp4', '', m)
       break
     case 'wm':
-      m.reply('Tunggu sedang di proses')
-      cmd.sendFile(m.chat, buttonId.slice(4), 'tiktok.mp4', 'success', m)
+      cmd.sendFile(m.chat, buttonId.slice(4), 'tiktok.mp4', '', m)
       break
     case 'ttaudio':
-      m.reply('Tunggu sedang di proses')
-      cmd.sendFile(m.chat, buttonId.slice(9), 'tiktok.mp3', '', m, false, { asDocument: true})
+      cmd.sendFile(m.chat, buttonId.slice(9), 'tiktok.mp3', '', m)
       break
     }
   }
