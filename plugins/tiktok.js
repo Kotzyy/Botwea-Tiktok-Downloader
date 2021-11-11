@@ -11,7 +11,7 @@ cmd.get("tiktok", async(m, args) => {
 })
 
 exports.help = {
-    name: "Tiktok Downloader No Watermark",
+    name: "Tiktok Downloader",
     description: "TikTok Downloader lets you save TikTok videos to your",
     usage: "/tiktok <url>"
 };
