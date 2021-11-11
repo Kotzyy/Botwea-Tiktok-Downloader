@@ -27,4 +27,20 @@ cmd.on("chat-update", async (chat) => {
     var { buttonresponse } = require('./plugins/_buttonrespon')
     buttonresponse(cmd, content)
   }
+  // auto Downloader
+  switch (mtype) {
+    case 'extendedTextMessage':
+    if (/^https?:\/\/.*vt/i.test(text)) {
+    await cmd.chatRead(content.chat)
+    const fetch = require('node-fetch')
+	  try { 
+       	var tiktok = await api.tiktok(text)
+      	cmd.send3ButtonImg(content.chat,  await (await fetch(tiktok.thumb)).buffer(), `${tiktok.caption}`, 'By Tiktok Downloader', 'Without Watermark', `>nowm ${tiktok.nowm}`, 'With Watermark', `>wm ${tiktok.wm}`, 'Only Audio', `>ttaudio ${tiktok.music}`, content)
+  	} catch(err) {
+  		  console.log(err)
+  	  	cmd.reply('Terjadi kesalahan dalam mengambil media! Mohon tunggu beberapa saat lagi')
+  	}
+ }
+break;
+}
 })
