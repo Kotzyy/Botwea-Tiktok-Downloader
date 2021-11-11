@@ -30,7 +30,7 @@ Contoh: Contoh */menu tiktok*`)
       cmd.sendFile(m.chat, buttonId.slice(4), 'tiktok.mp4', '', m)
       break
     case 'ttaudio':
-      cmd.sendFile(m.chat, buttonId.slice(9), 'tiktok.mp3', '', m)
+      cmd.sendFile(m.chat, buttonId.slice(9), null, null, m)
       break
     }
   }
